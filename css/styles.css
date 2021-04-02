@@ -8,11 +8,12 @@
 
 body {
     margin: 0;
+    font-family: 'Merriweather', serif;
 }
 
 header {
     padding: 1em 0;
-    background: navy;
+    background-image: linear-gradient(135deg, #175fff, #315ada 50%);
     color: white;
 }
 
@@ -23,7 +24,11 @@ h1,h2 {
 
 h2 {
     color: black;
-    font-weight: 800;
+    font-weight: 700;
+}
+
+label {
+    font-weight: 300;
 }
 
 /* ================================= 
@@ -64,6 +69,7 @@ fieldset {
 legend {
     padding: 1em 0;
     font-size: 1.35em;
+    font-weight: 400;
 }
 
 #contact label {
@@ -96,8 +102,8 @@ input[type="postal"] {
     width: 50%;
 }
 
-#newsletter p {
-    margin: 8px 0;
+#lang-label {
+    margin-bottom: 15px;
     font-size: 1em;
 }
 
@@ -114,6 +120,7 @@ input[type="checkbox"] {
 
  textarea {
      height: 100px;
+     font-family: 'Merriweather', serif;
  }
 
  button {
@@ -129,6 +136,11 @@ input[type="checkbox"] {
     border-width: 1px 1px 3px;
     box-shadow: 0 -1px 0 rgb(255 255 255 / 10%) inset;
     margin-bottom: 10px;
+ }
+
+ input:focus, select:focus, textarea:focus {
+    outline: solid 2px navy;
+    transition: outline 0.5s;
  }
 
  /* ---- Footer ---- */
