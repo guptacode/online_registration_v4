@@ -29,6 +29,7 @@ h2 {
 
 label {
     font-weight: 300;
+    cursor: pointer;
 }
 
 /* ================================= 
@@ -43,9 +44,10 @@ label {
     border-bottom: solid black 5px;
 }
 
+
 #h2-desc {
     font-size: 1em;
-    color: lightgrey;
+    color: grey;
     text-align: center;
 }
 
@@ -72,7 +74,7 @@ legend {
     font-weight: 400;
 }
 
-#contact label {
+.item-1 {
     display: block;
     padding-bottom: .75em;
 }
@@ -107,8 +109,9 @@ input[type="postal"] {
     font-size: 1em;
 }
 
-input[type="checkbox"] {
+input[type="checkbox"], input[type="radio"] {
     margin-right: 8px;
+    cursor: pointer;
 }
 
 .check-wrapper, .radio-wrapper {
@@ -143,11 +146,53 @@ input[type="checkbox"] {
     transition: outline 0.5s;
  }
 
+ button {
+    font-family: 'Merriweather', serif;
+ }
+
  /* ---- Footer ---- */
  
  footer {
     text-align: center;
+    color: grey;
+    font-style: italic;
  }
+
+ 
 /* ================================= 
   Media Queries
 ==================================== */
+
+@media screen and (min-width:768px) {
+    #form-container, .form-header {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    
+    input[type="text"], input[type="tel"], input[type="email"], input[type="postal"], select {
+        width: auto;
+        margin-bottom: 0;
+    }
+    
+    .flex-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .flex-item {
+        flex-grow: 1;
+    }
+
+    .item-1 {
+        display: initial;
+        flex-basis: 30px;
+        padding-bottom: 0;
+    }
+
+    .item-2 {
+        flex-grow: 2;
+    }
+
+}
