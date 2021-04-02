@@ -79,7 +79,7 @@ legend {
     padding-bottom: .75em;
 }
 
-input[type="text"], input[type="tel"], input[type="email"], input[type="postal"], select, textarea {
+input[type="text"], input[type="tel"], input[type="email"], select, textarea {
     background: rgba(255,255,255,0.1);
     border: none;
     border-radius: 5px;
@@ -100,7 +100,7 @@ input[type="text"]::-webkit-input-placeholder, input[type="email"]::-webkit-inpu
     text-align: right;
 }
 
-input[type="postal"] {
+input[id=zip] {
     width: 50%;
 }
 
@@ -169,7 +169,7 @@ input[type="checkbox"], input[type="radio"] {
         margin: 0 auto;
     }
     
-    input[type="text"], input[type="tel"], input[type="email"], input[type="postal"], select {
+    input[type="text"], input[type="tel"], input[type="email"], select {
         width: auto;
         margin-bottom: 0;
     }
